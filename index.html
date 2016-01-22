@@ -1,131 +1,108 @@
-<!doctype html>
-<!--
-  Material Design Lite
-  Copyright 2015 Google Inc. All rights reserved.
+<html>
+<head>
+	<script type="text/javascript" src="scripts/lib/jq.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link rel="Stylesheet" type="text/css" href="styles/xo.css" />
 
-  Licensed under the Apache License, Version 2.0 (the "License");
-  you may not use this file except in compliance with the License.
-  You may obtain a copy of the License at
-
-      https://www.apache.org/licenses/LICENSE-2.0
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License
--->
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Onda.io</title>
-
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
-
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-    <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
-
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-    <meta name="msapplication-TileColor" content="#3372DF">
-
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
-      <main class="mdl-layout__content">
-        <div class="demo-blog__posts mdl-grid">
-          <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="our-idea.html">Our Idea</a></h3>
-            </div>
-
-          </div>
-            <div class="mdl-card mockup mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
-                <div class="mdl-card__media mdl-color-text--black-50">
-                    <h3><a href="mockups.html">Our Design</a></h3>
-                </div>
-
-            </div>
+	<script type="text/javascript" src="scripts/lib/parallax.min.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
 
 
+	<link rel="Stylesheet" type="text/css" href="styles/index.css" />
 
-          <div class="mdl-card blog-entries mdl-cell mdl-cell--12-col">
-            <div class="mdl-card__media mdl-color-text--grey-50">
-              <h3><a href="entry.html">Our Progress</a></h3>
-            </div>
-            <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-              <div class="minilogo"></div>
-              <div>
-                <strong>Pitching to SVP</strong>
-                <span>Updated: Yesterday</span>
-              </div>
-            </div>
-          </div>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-34546066-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</head>
+<body class="background">
+
+	<div class="container">
+
+		<div id="index" class="page">
+				<div class="content-container home">
+					<div class="title">
+						<h1>July 29th, 2016</h1>
+						<img src="assets/centaur.jpg" />
+					</div>
+
+				</div>
+		</div>
+
+		<div id="weddingInfo" class="page">
+			<div class="content-container">
+				<div class="title flex-item">
+					<h1>Wedding Info</h1>
+				</div>
+
+				<div class="venue flex-item">
+					<h3>Venue</h3>
+					<div class="flex-item">
+						<a href="https://www.google.com/maps?q=11851+Eureka+Rd,+Edinboro,+PA+16412">Isabelle's Painted Gardens</a>
+					</div>
+					<div class="flex-item">
+						<img src="assets/isabelle-arch.jpg"/>
+					</div>
+				</div>
+				<div class="flex-item wedding-info">
+					<h3>Friday, July 29th, 2016</h3>
+					<h4>Schedule</h4>
+					<table class="wedding-info-table flex-item">
+						<tr><td>5:30pm</td><td>Ceremony</td></tr></tr>
+						<tr><td>6:00 - 7:00pm</td><td>Cocktail Hour</td></tr>
+						<tr><td>7:00pm - 10pm</td><td><a href="www.threebsaloon.com/">Dinner</a> & Dancing</td></tr>
+					</table>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="thingsToDo" class="page">
+
+		</div>
+
+		<div id="travel" class="page">
+
+		</div>
+
+		<div id="rsvp" class="page">
+			<div class="content-container home">
+				<img class="image-small" src="assets/isabells.jpg"/>
+				<a class="rsvp-link flex-item" href="http://joerica.anrsvp.com/">RSVP Here.</a>
+			</div>
+		</div>
+	</div>
 
 
-        </div>
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer--left-section">
-            <a href="http://twitter.com/onda_io" class=" mdl-mini-footer--social-btn social-btn social-btn__twitter mdl-button">
-              <span class="visuallyhidden">Twitter</span>
-            </a>
-            <a class="mdl-mini-footer--social-btn social-btn social-btn__blogger mdl-button">
-              <span class="visuallyhidden">Facebook</span>
-            </a>
-            <a class="mdl-mini-footer--social-btn social-btn social-btn__gplus mdl-button">
-              <span class="visuallyhidden">Google Plus</span>
-            </a>
-          </div>
+	<div id="leftControl" class="control">
 
-        </footer>
-      </main>
-      <div class="mdl-layout__obfuscator"></div>
-    </div>
+		<h3 id="leftText" class="dirText" style="float:right"> Test</h3>
+	</div>
 
-    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+	<div id="rightControl" class="control">
 
-  </body>
-  <script>
-    Array.prototype.forEach.call(document.querySelectorAll('.mdl-card__media'), function(el) {
-      var link = el.querySelector('a');
-      if(!link) {
-        return;
-      }
-      var target = link.getAttribute('href');
-      if(!target) {
-        return;
-      }
-      el.addEventListener('click', function() {
-        location.href = target;
-      });
-    });
-  </script>
+		<h3 id="rightText" class="dirText" style="float:left"> Test</h3>
+	</div>
+
+	<div id="topControl" class="control center" style="width:145px;left:45%;">
+
+		<h3 id="topText" class="dirText txtcenter" > Test</h3>
+	</div>
+
+	<div id="bottomControl" class="control center" style="width:145px;left:45%;bottom:0px;">
+			<h3 id="bottomText" class="dirText txtcenter"> Test</h3>
+
+	</div>
+
+
+</body>
 </html>
