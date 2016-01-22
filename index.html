@@ -1,11 +1,14 @@
 <html>
 <head>
-	<script type="text/javascript" src="scripts/lib/jq.js"></script>
+
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 	<link rel="Stylesheet" type="text/css" href="styles/xo.css" />
 
-	<script type="text/javascript" src="scripts/lib/parallax.min.js"></script>
-	<script type="text/javascript" src="scripts/index.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+
 
 
 	<link rel="Stylesheet" type="text/css" href="styles/index.css" />
@@ -23,6 +26,7 @@
 	  })();
 
 	</script>
+
 </head>
 <body class="background">
 
@@ -31,7 +35,7 @@
 		<div id="index" class="page">
 				<div class="content-container home">
 					<div class="title">
-						<h1>July 29th, 2016</h1>
+						<h5>July 29th, 2016</h5>
 						<img src="assets/centaur.jpg" />
 					</div>
 
@@ -41,11 +45,11 @@
 		<div id="weddingInfo" class="page">
 			<div class="content-container">
 				<div class="title flex-item">
-					<h1>Wedding Info</h1>
+					<h6>Wedding Info</h6>
 				</div>
 
 				<div class="venue flex-item">
-					<h3>Venue</h3>
+					<h6>Venue</h6>
 					<div class="flex-item">
 						<a href="https://www.google.com/maps?q=11851+Eureka+Rd,+Edinboro,+PA+16412">Isabelle's Painted Gardens</a>
 					</div>
@@ -54,8 +58,8 @@
 					</div>
 				</div>
 				<div class="flex-item wedding-info">
-					<h3>Friday, July 29th, 2016</h3>
-					<h4>Schedule</h4>
+					<h6>Friday, July 29th, 2016</h6>
+					<h6>Schedule</h6>
 					<table class="wedding-info-table flex-item">
 						<tr><td>5:30pm</td><td>Ceremony</td></tr></tr>
 						<tr><td>6:00 - 7:00pm</td><td>Cocktail Hour</td></tr>
@@ -71,7 +75,36 @@
 		</div>
 
 		<div id="travel" class="page">
+			<div class="flight-searcher">
+				<h6>Seattle to Erie</h6>
+				<label for="fromErie">From: <input id="fromErie"  class="datepicker date-input" type="date" ></label>
+				<label for="toErie">To: <input id="toErie"  class="datepicker date-input" type="date" ></label>
 
+				<a class="waves-effect waves-light btn">Search Flights</a>
+				<div class="search-results">
+
+				</div>
+			</div>
+			<div class="flight-searcher">
+				<h6>Seattle to Cleveland</h6>
+				<label for="fromCleveland">From: <input id="fromCleveland" class="datepicker date-input" type="date" ></label>
+				<label for="toCleveland">To: <input id="toCleveland" class="datepicker date-input" type="date" ></label>
+
+				<a class="waves-effect waves-light btn">Search Flights</a>
+				<div class="search-results">
+
+				</div>
+			</div>
+			<div class="flight-searcher">
+				<h6>Seattle to Buffalo</h6>
+				<label for="fromBuffalo">From: <input id="fromBuffalo" class="datepicker date-input" type="date" ></label>
+				<label for="toBuffalo">To: <input id="toBuffalo" class="datepicker date-input" type="date" ></label>
+
+				<a class="waves-effect waves-light btn">Search Flights</a>
+				<div class="search-results">
+
+				</div>
+			</div>
 		</div>
 
 		<div id="rsvp" class="page">
@@ -85,24 +118,27 @@
 
 	<div id="leftControl" class="control">
 
-		<h3 id="leftText" class="dirText" style="float:right"> Test</h3>
+		<h6 id="leftText" class="dirText" style="float:right"> Test</h6>
 	</div>
 
 	<div id="rightControl" class="control">
 
-		<h3 id="rightText" class="dirText" style="float:left"> Test</h3>
+		<h6 id="rightText" class="dirText" style="float:left"> Test</h6>
 	</div>
 
 	<div id="topControl" class="control center" style="width:145px;left:45%;">
 
-		<h3 id="topText" class="dirText txtcenter" > Test</h3>
+		<h6 id="topText" class="dirText txtcenter" > Test</h6>
 	</div>
 
 	<div id="bottomControl" class="control center" style="width:145px;left:45%;bottom:0px;">
-			<h3 id="bottomText" class="dirText txtcenter"> Test</h3>
+			<h6 id="bottomText" class="dirText txtcenter"> Test</h6>
 
 	</div>
-
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts/lib/parallax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+	<script type="text/javascript" src="scripts/index.js"></script>
 
 </body>
 </html>

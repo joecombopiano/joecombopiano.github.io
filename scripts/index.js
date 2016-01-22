@@ -1,3 +1,5 @@
+
+const API_KEY = "AIzaSyCH9mH0vQ_qbp3-8FDtNiSRJXyvqpE8PEo";
 var rightKey, leftKey, topKey, bottomKey;
 
 $(document).ready(function () {
@@ -95,6 +97,11 @@ $(document).ready(function () {
 			parallax[page].bottom();
 		};
 	}
+
+	$('.datepicker').pickadate({
+		selectMonths: true, // Creates a dropdown to control month
+		selectYears: 15 // Creates a dropdown of 15 years to control year
+	});
 
 
 
