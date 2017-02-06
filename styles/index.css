@@ -108,12 +108,16 @@ p{
 }
 
 .title{
-	text-align: center;
+	text-align: left;
 
 }
-.title img{
-	margin-top:50px;
-	height:350px;
+.icon{
+	height: 32px;
+	width: auto;
+}
+.links{
+	margin-top: 20px;
+	margin-right: 24px;
 }
 .venue img{
 	height:350px;
