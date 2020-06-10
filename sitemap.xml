@@ -1,51 +1,35 @@
 
 <?xml version="1.0" encoding="UTF-8"?>
 
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/sche mas/sitemap/0.9">
 
    <url>
       <loc>https://www.combo.consulting/</loc>
       <lastmod>2020-06-09</lastmod>
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
       <priority>0.5</priority>
    </url>
 
    <url>
 
-      <loc>https://www.combo.consulting/services</loc>
+      <loc>https://combo.consulting/#/services</loc>
 
       <lastmod>2020-06-09</lastmod>
 
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
 
       <priority>0.5</priority>
 
    </url>
-   <url>
+    <url>
 
-      <loc>http://www.example.com/catalog?item=73&amp;desc=vacation_new_zealand</loc>
+      <loc>https://combo.consulting/#/contact</loc>
 
-      <lastmod>2004-12-23</lastmod>
+      <lastmod>2020-06-09</lastmod>
 
-      <changefreq>weekly</changefreq>
+      <changefreq>daily</changefreq>
 
-   </url>
-
-   <url>
-
-      <loc>http://www.example.com/catalog?item=74&amp;desc=vacation_newfoundland</loc>
-
-      <lastmod>2004-12-23T18:00:15+00:00</lastmod>
-
-      <priority>0.3</priority>
-
-   </url>
-
-   <url>
-
-      <loc>http://www.example.com/catalog?item=83&amp;desc=vacation_usa</loc>
-
-      <lastmod>2004-11-23</lastmod>
+     
 
    </url>
 
