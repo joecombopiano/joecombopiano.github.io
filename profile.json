@@ -1,0 +1,28 @@
+{
+    "title": "Combo Consulting",
+    "bio": "I'm Joe Combopiano - a freelance engineer and product manager. Let's chat!",
+    "links":[
+        {
+            "title":"LinkedIn",
+            "url":"https://www.linkedin.com/in/joe-combopiano-09b9ab1a/"
+        },
+        {
+            "title":"Calendly",
+            "url":"https://calendly.com/combo-consulting"
+        },
+        {
+            "title": "Resume",
+            "url": "https://docs.google.com/document/d/1UtIBi5MZm4kr2Q02REcdKBJwlP2fpLsPG_-Mml2Kepg/edit?usp=sharing"
+        },
+        {
+            "title": "GitHub",
+            "url": "https://github.com/joecombopiano"
+        },
+        {
+            "title": "Instagram",
+            "url": "https://instagram.com/joecombopiano"
+        }
+    ],
+    "pixelId": "12321412412",
+    "logo":"./logo.jpeg"
+}

@@ -1,1 +1,113 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Joe Combopiano, Consultant"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>combo consulting</title><link href="/static/css/main.a24947dd.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function t(t){for(var n,i,l=t[0],f=t[1],a=t[2],c=0,s=[];c<l.length;c++)i=l[c],Object.prototype.hasOwnProperty.call(o,i)&&o[i]&&s.push(o[i][0]),o[i]=0;for(n in f)Object.prototype.hasOwnProperty.call(f,n)&&(e[n]=f[n]);for(p&&p(t);s.length;)s.shift()();return u.push.apply(u,a||[]),r()}function r(){for(var e,t=0;t<u.length;t++){for(var r=u[t],n=!0,l=1;l<r.length;l++){var f=r[l];0!==o[f]&&(n=!1)}n&&(u.splice(t--,1),e=i(i.s=r[0]))}return e}var n={},o={1:0},u=[];function i(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,i),r.l=!0,r.exports}i.m=e,i.c=n,i.d=function(e,t,r){i.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},i.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.t=function(e,t){if(1&t&&(e=i(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(i.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)i.d(r,n,function(t){return e[t]}.bind(null,n));return r},i.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return i.d(t,"a",t),t},i.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},i.p="/";var l=this.webpackJsonpwebsite=this.webpackJsonpwebsite||[],f=l.push.bind(l);l.push=t,l=l.slice();for(var a=0;a<l.length;a++)t(l[a]);var p=f;r()}([])</script><script src="/static/js/2.24c2ee75.chunk.js"></script><script src="/static/js/main.e3cde08e.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<title>Links Free</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
+    img {
+        margin-top: 32px;
+        border-radius: 50%;
+        width: 96px;
+        height: 96px;
+    }
+
+    #links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    a {
+        margin-bottom: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: 100%;
+        max-width: 640px;
+        color: white;
+        
+    }
+    a:hover{
+        background-color: #00c4a7;
+    }
+    
+    a:link {
+        background-color: #00d1b2;
+        border-color: #00d1b2;
+        font-weight: 600;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    
+</style>
+<script async>
+    (async () => {
+        const response = await fetch("./profile.json");
+        const { logo, pixelId, links, bio, title, ga } = await response.json();
+
+        //FACEBOOK PIXEL CODE
+        if (!!pixelId) {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', `${pixelId}`);
+            fbq('track', 'PageView');
+        }
+
+        //GOOGLE ANALYTICS CODE
+        if (!!ga) {
+            const gaScript = document.createElement('script');
+            gaScript.onload = function () {
+                window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+                ga('create', ga, 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+            };
+            gaScript.src = "https://www.google-analytics.com/analytics.js";
+
+            document.head.appendChild(gaScript);
+        }
+        if (!!logo) {
+            document.querySelector("#logo").src = logo;
+        }
+        if (!!title) {
+            document.querySelector("#title").innerText = title;
+        }
+        if (!!bio) {
+            document.querySelector("#bio").innerText = bio;
+        }
+        if (!!links && links.length > 0) {
+            const htmlLinks = links.map(link => {
+                const a = document.createElement('a');
+                const linkText = document.createTextNode(link.title);
+                a.appendChild(linkText);
+                a.title = link.title;
+                a.href = link.url;
+                a.target = "_blank"
+                return a;
+            });
+            htmlLinks.forEach(link => {
+                document.querySelector("#links").appendChild(link);
+            });
+        }
+    })();
+</script>
+
+<img id="logo"></img>
+<h1 id="title"></h1>
+<p id="bio"></p>
+<div id="links"></div>
