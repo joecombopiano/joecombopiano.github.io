@@ -11,6 +11,10 @@
             "url":"https://calendly.com/combo-consulting"
         },
         {
+            "title": "Send me an email",
+            "url":"mailto:joe@combo.consulting"
+        },
+        {
             "title": "Resume",
             "url": "https://docs.google.com/document/d/1UtIBi5MZm4kr2Q02REcdKBJwlP2fpLsPG_-Mml2Kepg/edit?usp=sharing"
         },
