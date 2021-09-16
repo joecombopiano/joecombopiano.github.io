@@ -27,6 +27,7 @@
             "url": "https://instagram.com/joecombopiano"
         }
     ],
-    "pixelId": "12321412412",
+    "facebookPixelId": "12321412412",
+    "googleTagId":"G-2JCB399RGQ",
     "logo":"./logo.jpeg"
 }
