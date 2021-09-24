@@ -29,5 +29,8 @@
     ],
     "facebookPixelId": "12321412412",
     "googleTagId":"G-2JCB399RGQ",
-    "logo":"./logo.jpeg"
+    "linkedInPartnerId":"3526068",
+    "tikTokPixelId":"C54UB6O00UN7QUNFE6B0",
+    "logo":"./logo.jpeg",
+    "buttonColor": "#00d1b2"
 }
